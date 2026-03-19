@@ -9,5 +9,4 @@ public class UemSpringMvcApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(UemSpringMvcApplication.class, args);
 	}
-
 }

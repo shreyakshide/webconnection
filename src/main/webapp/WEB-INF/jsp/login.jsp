@@ -6,13 +6,22 @@
 
 <h2 align="center">Login</h2>
 
+<%
+String msg = (String)request.getAttribute("msg");
+if(msg != null){
+%>
+<h3 style="color:red;" align="center"><%=msg%></h3>
+<%
+}
+%>
+
 <form action="login" method="post">
 
 <table align="center" border="1">
 
 <tr>
-<td>User Id</td>
-<td><input type="text" name="userid"></td>
+<td>Email</td>
+<td><input type="text" name="email"></td>
 </tr>
 
 <tr>
